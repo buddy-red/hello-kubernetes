@@ -4,15 +4,10 @@ metadata:
   name: hello-kubernetes-ingress
   annotations:
     kubernetes.io/ingress.class: nginx
-    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
-  tls:
-  - hosts:
-    - 1.m2jd.com
-    - 2.m2jd.com
     secretName: hello-kubernetes-tls
   rules:
-  - host: "1.m2jd.com"
+  - host: "a.m2jd.com"
     http:
       paths:
       - pathType: Prefix
@@ -22,7 +17,7 @@ spec:
             name: hello-kubernetes-first
             port:
               number: 80
-  - host: "2.m2jd.com"
+  - host: "b.m2jd.com"
     http:
       paths:
       - pathType: Prefix
