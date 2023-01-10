@@ -5,7 +5,7 @@ metadata:
 spec:
   acme:
     # Email address used for ACME registration
-    email: edal@buddy.red
+    email: ziuhoo@gmail.com
     server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       # Name of a secret used to store the ACME account private key
